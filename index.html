@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <button id="bold" class="option-button format">
+                B
+            </button>
+            <button id="italic" class="option-button format">
+                Ĩ
+            </button>
+            <button id="underline" class="option-button format">
+                ū
+            </button>
+            <button id="strikethrough" class="option-button format">
+                ʉ
+            </button>
+            <button id="superscript" class="option-button format">
+                ∧
+            </button>
+            <button id="subscript" class="option-button format">
+                ∨
+            </button>
+
+
+
+            <button id="insertOrderedList" class="option-button">
+                ⁝ol
+            </button>
+            <button id="insertUnorderedList" class="option-button">
+                ⁝ul
+            </button>
+
+
+            <button id="undo" class="option-button">
+                ↩
+            </button>
+            <button id="redo" class="option-button">
+                ↪
+            </button>
+
+
+
+            <button id="createLink" class="option-button">
+                🔗
+            </button>
+            <button id="unlink" class="option-button">
+                🖇️
+            </button>
+
+
+
+            <button id="justifyLeft" class="option-button align">
+                jl
+            </button>
+            <button id="justifyCenter" class="option-button align">
+                jc
+            </button>
+            <button id="justifyRight" class="option-button align">
+                jr
+            </button>
+            <button id="justifyFull" class="option-button align">
+                jf
+            </button>
+
+
+            <button id="indent" class="option-button spacing">
+                ⟬<small>indent</small>
+            </button>
+            <button id="outdent" class="option-button spacing">
+                ⟭<small>outdent</small>
+            </button>
+
+
+
+
+            <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+
+            <select id="font-name" class="adv-option-button"></select>
+            <select id="font-size" class="adv-option-button"></select>
+
+            <div class="input-wrapper">
+                <input type="color" id="forColor" class="adv-option-button">
+                <label for="forColor">Font Color</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button">
+                <label for="backColor">Highlight Color</label>
+            </div>
+        </div>
+
+        <div id="text-input" contenteditable="true"></div>
+    </div>
+</body>
+</html>
