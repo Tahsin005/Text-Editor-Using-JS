@@ -86,3 +86,6 @@ input[type="color"]::-moz-color-swatch {
     height: 50vh;
 }
 
+.active {
+    background-color: gray;
+}
